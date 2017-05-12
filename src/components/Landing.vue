@@ -4,6 +4,7 @@
       <div class="row">
         <div class="col-lg-7">
           <h1 class="md-display-3 white middle">Friends reffer friends</h1>
+          <h2 class="md-display-1 white">Board game store case</h2>
         </div>
         <div class="col-lg-5">
           <md-whiteframe md-elevation="2" md-tag="div">
