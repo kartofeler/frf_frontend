@@ -30,8 +30,7 @@
                     <p class="text-left">{{ item.description }}</p>
                     <md-button class="md-primary md-raised btn-block space-above" @click.native="buy">Buy</md-button>
                   </div>
-                </div>npm start
-
+                </div>
               </div>
             </div>
           </md-whiteframe>
