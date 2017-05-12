@@ -46,7 +46,6 @@
 </template>
 
 <script>
-  import MdListItem from '../../node_modules/vue-material/src/components/mdList/mdListItemRouter'
   export default {
     components: {MdListItem},
     name: 'referrrer',
@@ -60,7 +59,7 @@
     },
     methods: {
       show () {
-        this.$http.get('http://localhost:3000/getRedemptions?code=' + this.code)
+        this.$http.get(this.$config.apiRoot + 'getRedemptions?code=' + this.code)
           .then(res => {
             this.entries = res.body.entries
             this.total = res.body.total

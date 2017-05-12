@@ -35,6 +35,7 @@
 </template>
 
 <script>
+
   export default {
     name: 'landing',
     data () {
@@ -49,7 +50,7 @@
     },
     methods: {
       createReferrer () {
-        this.$http.post('http://localhost:3000/referrer', this.referrer)
+        this.$http.post(this.$config.apiRoot + 'referrer', this.referrer)
           .then(res => {
             console.log(res)
             this.referrals = {

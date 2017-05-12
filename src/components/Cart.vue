@@ -54,7 +54,7 @@
     },
     methods: {
       buy () {
-        this.$http.post('http://localhost:3000/finalize', {code: this.$route.query.code, game: this.item})
+        this.$http.post(this.$config.apiRoot + 'finalize', {code: this.$route.query.code, game: this.item})
           .then(res => {
             this.$router.push({name: 'Success'})
           }, err => {
@@ -63,13 +63,13 @@
       }
     },
     created () {
-      this.$http.get('http://localhost:3000/item', this.referrer)
+      this.$http.get(this.$config.apiRoot + 'item', this.referrer)
         .then(res => {
           this.item = res.body
         }, err => {
           console.log(err)
         })
-      this.$http.get('http://localhost:3000/verify?code=' + this.$route.query.code)
+      this.$http.get(this.$config.apiRoot + 'verify?code=' + this.$route.query.code)
         .then(res => {
           this.codeActive = res.body.status
           if (this.codeActive) {

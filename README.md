@@ -27,4 +27,16 @@ npm run e2e
 npm test
 ```
 
+### Changes
+
+If you change port or IP address of API, you should change apiRoot value in main.js. 
+Also if you host this app on some domain you need to change domain value
+``` 
+Vue.use(VueConfig, {
+  domain: 'http://localhost:8080/#/',
+  apiRoot: 'http://localhost:3000/'
+})
+```
+
+
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

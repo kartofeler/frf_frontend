@@ -17,7 +17,8 @@ Vue.config.productionTip = false
 Vue.use(VueMaterial)
 Vue.use(resource)
 Vue.use(VueConfig, {
-  domain: 'http://localhost:8080/#/'
+  domain: 'http://localhost:8080/#/',
+  apiRoot: 'http://localhost:3000/'
 })
 
 Vue.material.registerTheme('default', {

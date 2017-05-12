@@ -43,8 +43,6 @@
       width: 100%
       min-height: 450px
       background-color: #fff
-      /*border-radius: 0 0 10px 10px*/
-      /*box-shadow: 1px 1px 10px #888888*/
       padding: 64px 16px 16px 16px
       h2, h3
         margin-bottom: 32px
