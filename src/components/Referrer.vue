@@ -47,7 +47,6 @@
 
 <script>
   export default {
-    components: {MdListItem},
     name: 'referrrer',
     data () {
       return {
